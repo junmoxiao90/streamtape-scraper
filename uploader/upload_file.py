@@ -34,6 +34,12 @@ else:
                 console.print(f"Uploaded {flv_file} Successfully", style="bold green")
                 console.print(f"Download link for {flv_file}: {url}")
 
+                # 移动文件到 /home/back
+                dest_folder = '/home/junmoxiao/afreeca-od'
+                dest_path = os.path.join(dest_folder, flv_file)
+                os.rename(file_path, dest_path)
+                console.print(f"Moved {flv_file} to {dest_folder}", style="bold cyan")
+
                 # 保存下载链接到文件
                 save_path = '/home/junmoxiao/download_links.txt'
                 with open(save_path, 'a') as save_file:
