@@ -37,7 +37,7 @@ else:
                 # 移动文件到 /home/back
                 dest_folder = '/home/junmoxiao/afreeca-od'
                 dest_path = os.path.join(dest_folder, flv_file)
-                os.rename(file_path, dest_path)
+                os.system(f"mv {file_path} {dest_path}")
                 console.print(f"Moved {flv_file} to {dest_folder}", style="bold cyan")
 
                 # 保存下载链接到文件
