@@ -8,8 +8,8 @@
  
  ## Use this Project :
  ```
- https://github.com/junmoxiao90/streamtape-scraper.git
- cd streamtape-scraper
+ git clone https://github.com/junmoxiao90/streamtape-scraper.git
+ cd streamtape-scraper 
  ```
  ### Install the requirements :
  ```
